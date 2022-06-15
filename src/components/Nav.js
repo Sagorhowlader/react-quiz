@@ -1,15 +1,17 @@
 import logo from "../assets/images/logo-bg.png";
 import classes from "../styles/nav.module.css";
 import Account from "./Account";
+
+import { Link } from "react-router-dom";
 export default function Nav() {
   return (
     <nav className={classes.nav}>
       <ul>
         <li>
-          <a href="index.html" className={classes.brand}>
+          <Link to="/" className={classes.brand}>
             <img src={logo} alt="Halka React Logo" />
             <h3>Halka React</h3>
-          </a>
+          </Link>
         </li>
       </ul>
       <Account />
