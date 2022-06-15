@@ -1,8 +1,7 @@
 export default function Checkbox({ text, ...rest }) {
-  return (
-    <label>
-      <input {...rest} />
-      <span>{text}</span>
-    </label>
-  );
+    return (
+        <label>
+            <input type="checkbox" {...rest} /> <span>{text}</span>
+        </label>
+    );
 }

@@ -8,6 +8,7 @@ export default function SingUp() {
   return (
     <>
       <h1>Create an account</h1>
+
       <div className="column">
         <Illustration />
         <Form className={`${classes.signup}`}>
@@ -18,15 +19,20 @@ export default function SingUp() {
             placeholder="Enter email"
             icon="alternate_email"
           />
+
           <TextInput type="password" placeholder="Enter password" icon="lock" />
+
           <TextInput
             type="password"
             placeholder="Confirm password"
             icon="lock_clock"
           />
-          <Checkbox type="checkbox" text="I agree to the Terms & Conditions" />
+
+          <Checkbox text="I agree to the Terms &amp; Conditions" />
+
           <Button>Submit Now</Button>
-          <div class="info">
+
+          <div className="info">
             Already have an account? <a href="login.html">Login</a> instead.
           </div>
         </Form>
