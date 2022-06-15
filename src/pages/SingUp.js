@@ -1,14 +1,16 @@
+import Button from "../components/Button";
+import Checkbox from "../components/Checkbox";
 import Form from "../components/Form";
-import Lllustration from "../components/Lllustration";
+import Illustration from "../components/Illustration";
 import TextInput from "../components/TextInput";
-import classes from "../styles/singup.module.css";
+import classes from "../styles/signup.module.css";
 export default function SingUp() {
   return (
     <>
       <h1>Create an account</h1>
       <div className="column">
-        <Lllustration />
-        <Form className={`${classes.singup}`}>
+        <Illustration />
+        <Form className={`${classes.signup}`}>
           <TextInput type="text" placeholder="Enter name" icon="person" />
 
           <TextInput
@@ -22,6 +24,11 @@ export default function SingUp() {
             placeholder="Confirm password"
             icon="lock_clock"
           />
+          <Checkbox type="checkbox" text="I agree to the Terms & Conditions" />
+          <Button>Submit Now</Button>
+          <div class="info">
+            Already have an account? <a href="login.html">Login</a> instead.
+          </div>
         </Form>
       </div>
     </>
